@@ -17,7 +17,7 @@ Set `TOKENLAB_API_KEY` in `.env.local`, then open `http://localhost:3000`.
 - Next.js App Router API route
 - Vercel AI SDK streaming chat
 - TokenLab OpenAI-compatible base URL: `https://api.tokenlab.sh/v1`
-- Default model: `gpt-5.4`
+- Default model: `gpt-5.5`
 
 ## Links
 

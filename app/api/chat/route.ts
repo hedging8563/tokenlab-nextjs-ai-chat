@@ -14,8 +14,8 @@ export async function POST(req: Request) {
   const { messages } = await req.json();
 
   const result = await streamText({
-    model: tokenlab.chatModel(process.env.TOKENLAB_MODEL || "gpt-5.4"),
-    messages: convertToModelMessages(messages)
+    model: tokenlab.chatModel(process.env.TOKENLAB_MODEL || "gpt-5.5"),
+    messages: await convertToModelMessages(messages)
   });
 
   return result.toUIMessageStreamResponse();
